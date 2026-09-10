@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ALLAVIN
 
-## Getting Started
+**ALLAVIN — цифровой маркетплейс профессиональных услуг с отображением доступности специалистов и возможностью бронирования.**
 
-First, run the development server:
+Платформа помогает пользователю найти подходящего профессионала, посмотреть его услуги, стоимость и доступное время, а затем забронировать услугу в одном интерфейсе.
+
+---
+
+## Проблема
+
+Сегодня получение профессиональной услуги часто состоит из нескольких разрозненных шагов:
+
+- найти специалиста;
+- сравнить опыт и стоимость;
+- отдельно связаться с ним;
+- уточнить доступность;
+- согласовать время;
+- договориться о формате оказания услуги.
+
+Это увеличивает время ожидания и создаёт лишние действия как для клиента, так и для профессионала.
+
+ALLAVIN объединяет эти процессы в одном цифровом сервисе.
+
+---
+
+## Решение
+
+ALLAVIN предлагает единый пользовательский сценарий:
+
+**Найти специалиста → открыть профиль → выбрать услугу → увидеть доступное время → забронировать → получить подтверждение**
+
+Пользователь сразу видит:
+
+- специализацию профессионала;
+- перечень услуг;
+- стоимость;
+- доступное время;
+- возможность бронирования.
+
+Для профессионала платформа в дальнейшем может стать единым инструментом управления услугами, стоимостью, графиком доступности и входящими заявками.
+
+---
+
+## Рабочий прототип
+
+В рамках хакатона уже реализован основной пользовательский сценарий:
+
+**Главная страница → профиль специалиста → услуги → доступные временные слоты → бронирование → подтверждение бронирования**
+
+Текущий MVP использует демонстрационные данные и предназначен для проверки ключевой механики платформы.
+
+Реальная оплата в текущей версии не используется.
+
+---
+
+## Реализованные функции
+
+- главная страница маркетплейса;
+- карточки профессионалов;
+- статус доступности;
+- профиль специалиста;
+- перечень услуг;
+- отображение стоимости;
+- доступные временные слоты;
+- действие бронирования;
+- страница подтверждения бронирования;
+- адаптивный веб-интерфейс.
+
+---
+
+## Где может применяться
+
+ALLAVIN может использоваться для оказания профессиональных услуг в таких сферах, как:
+
+- бизнес-консалтинг;
+- юридические услуги;
+- финансовые услуги;
+- маркетинг;
+- IT и технологический консалтинг;
+- другие интеллектуальные и профессиональные услуги.
+
+Основная идея ALLAVIN — создать единый цифровой сервис, где клиент получает удобный доступ к профессиональным компетенциям, а специалист может предлагать и монетизировать свои знания и опыт.
+
+---
+
+## Технологии
+
+Хакатонный MVP реализован как современное веб-приложение с использованием:
+
+- Next.js;
+- React;
+- TypeScript;
+- Tailwind CSS;
+- Next.js App Router.
+
+В текущей версии используются локальные демонстрационные данные, поэтому основной сценарий можно запустить без подключения внешней базы данных и сторонних сервисов.
+
+---
+
+## Как запустить проект
+
+### Требования
+
+- Node.js
+- npm
+
+### Установка
 
 ```bash
+git clone https://github.com/Pumpishop/allavin_2026.git
+cd allavin_2026
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
